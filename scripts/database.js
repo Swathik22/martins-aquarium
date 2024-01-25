@@ -4,7 +4,7 @@ const database={
         id:1,
         name:"Gold Fish",
         species:"Carassius auratus",
-        length:2,
+        size:6,
         image:"./images/GoldFish.webp",
         food:"eggs"
     },
@@ -12,7 +12,7 @@ const database={
         id:2,
         name:"Yellow Fish",
         species:"Zebrasoma flavescens",
-        length:4,
+        size:10,
         image:"./images/YellowFish.webp",
         food:"Dried and frozen herbivore food"
     },
@@ -20,7 +20,7 @@ const database={
         id:3,
         name:"AngelFish",
         species:"Pterophyllum",
-        length:3,
+        size:3,
         image:"./images/AngelFish.jfif",
         food:"Worms and Zucchini"
     },
@@ -28,7 +28,7 @@ const database={
         id:4,
         name:"Panda corydoras",
         species:"Corydoras panda",
-        length:1.5,
+        size:1.5,
         image:"./images/pandaFish.jpg",
         food:"BloodWorms and Shrimps"
     }],
@@ -106,3 +106,10 @@ export const getLocations=()=>{
 export const getQuotes=()=>{
     return database.quotes.map(quote=>({...quote}))
 }
+
+// Concept Checking Questions
+// What is the data type of the database variable?  object
+// What is the data type of the fish property?  array
+// What is the data type of the name property?  string
+// What is the data type of the size property?  number
+// What data types will the fish array contain? objects

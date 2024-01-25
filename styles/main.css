@@ -1,6 +1,6 @@
 .components{
     display: flex;
-    justify-content: center;    
+    justify-content: space-between;     
     font:bold;
     margin:auto;
 }
@@ -10,26 +10,70 @@ h1{
 }
 
 .inner-section{
-    border: 1px solid black;
+    border: 1px solid rgb(110, 75, 237);    
+    width: 80%;
 }
 
-.fishdiv{
+/* .fishdiv{
     display: flex;
     justify-content: flex-start;
-    
+    align-items: flex-end;  
+    padding: 10px;
+    border: 1px solid black;   
+} */
+
+/* justify-content: flex-start;
+    align-content: flex-start; */
+
+#fishList{
+    display:flex;    
+    margin: auto;
+    background-color: aqua;
+    border:2px solid rgb(52, 22, 22);
+    overflow: auto;
+ 
+}
+
+.fishBlock{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tankTips{
+    background-color: rgb(183, 225, 225);
+    border:2px solid rgb(52, 22, 22);
+}
+
+#locations{
+    background-color: rgb(142, 236, 178);
+    border:2px solid rgb(52, 22, 22);
+}
+
+.fishImgDiv{
+    width:40%;
 }
 
 .fishSize{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 75px;
-
+    width:60%;
+    float: left;
+    
 }
-
+#fishDetails{
+    float: right;      
+    width:40%;
+}
 ul
 {
+    border:1px solid rgb(234, 79, 203);
     list-style-type:none;
     padding:0px;
     margin: 2px;
-}
+ }
+
+.quotesList{
+    border:1px solid black;
+    padding:10px;
+} 
